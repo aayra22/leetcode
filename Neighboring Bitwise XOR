@@ -1,0 +1,15 @@
+class Solution {
+public:
+   NOTE :  DUPLICATE WALA CONCEPT HRR ELE DO BAAR AYYEGA SO XOR SHOULD BE 0
+    bool doesValidArrayExist(vector<int>& derived) {
+        int result=0;
+        for(int num:derived){
+            result ^= num;
+        }
+
+        if(result == 0)
+        return true;
+        else
+        return false;
+    }
+};
